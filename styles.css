@@ -156,6 +156,9 @@ main {
     .headerContainer .container .texts .sub-title {
         font-size: 30px;
     }
+        .headerContainer {
+            height: 40vh;
+        }
 }
 
 @media only screen and (min-width: 750px) {
@@ -166,10 +169,10 @@ main {
     .headerContainer .container .texts .title-text {
         font-size: 70px;
     }
-
-    .headerContainer {
-        height: 32vh;
-    }
+   .headerContainer {
+       height: 40vh;
+   }
+   
 }
 
 @media only screen and (min-width: 950px) {
@@ -184,8 +187,7 @@ main {
     .headerContainer .container .texts .sub-title {
         font-size: 35px;
     }
-
-    .headerContainer {
-        height: 40vh;
-    }
+         .headerContainer {
+             height: 45vh;
+         }
 }
