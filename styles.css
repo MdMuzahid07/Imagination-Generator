@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+    background: url("./assets/space-travel-collage-design.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+.headerContainer {
+    height: 40vh;
+    width: 100%;
+    background: rgba(234, 0, 255, 0.333);
+}
+
+.headerContainer .container .texts .title-text {
+    padding-top: 5vh;
+    font-size: 100px;
+    font-weight: 600;
+    color: white;
+}
+
+.headerContainer .container .texts .sub-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.inputForm {
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.inputForm input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+    font-size: 20px
+}
+
+.inputForm .controller {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 1rem;
+}
+
+.inputForm .controller .quantitySelector select {
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.inputForm .controller .submitBtn {
+    font-size: 20px;
+    border: none;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(187, 0, 255);
+    color: white;
+    font-weight: 600;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.79);
+    width: 100%;
+    min-height: 60vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mainContainerWidth {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.cardGrid .card {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: rgb(255, 0, 153);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.cardGrid .card img {
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media only screen and (min-width: 200px) {
+    .cardGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .headerContainer .container .texts .title-text {
+        font-size: 32px;
+    }
+
+    .headerContainer .container .texts .sub-title {
+        font-size: 20px;
+    }
+
+    .headerContainer {
+        height: 30vh;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .headerContainer .container .texts .title-text {
+        font-size: 50px;
+    }
+
+    .headerContainer .container .texts .sub-title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .cardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .headerContainer .container .texts .title-text {
+        font-size: 70px;
+    }
+
+    .headerContainer {
+        height: 32vh;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    .cardGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .headerContainer .container .texts .title-text {
+        font-size: 100px;
+    }
+
+    .headerContainer .container .texts .sub-title {
+        font-size: 35px;
+    }
+
+    .headerContainer {
+        height: 40vh;
+    }
+}
